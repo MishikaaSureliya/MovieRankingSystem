@@ -1,0 +1,63 @@
+﻿<link rel="stylesheet" href="/css/site.css" />
+
+<div class="container">
+    <h2>📝 Register</h2>
+
+    <input type="text" id="name" placeholder="Name" />
+    <br />
+    <input type="email" id="email" placeholder="Email" />
+    <br />
+    <input type="password" id="password" placeholder="Password" />
+    <br />
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+    <br />
+
+    <button onclick="register()">Register</button>
+
+    <p>Already have an account? <a href="/Home/Login">Login</a></p>
+</div>
+
+<script>
+    async function register() {
+        const data = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+            confirmPassword: document.getElementById("confirmPassword").value
+        };
+
+        const res = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    });
+
+    if (res.ok) {
+        alert("Registered successfully");
+        window.location.href = "/Home/Login";
+    } else {
+        let message = "";
+
+        const contentType = res.headers.get("content-type");
+
+        if (contentType && contentType.includes("application/json")) {
+            const errorData = await res.json();
+
+            if (errorData.errors) {
+                // validation errors
+                for (let key in errorData.errors) {
+                    message += errorData.errors[key].join(", ") + "\n";
+                }
+            } else {
+                // normal JSON error
+                message = errorData.message || errorData.title || "Error occurred";
+            }
+        } else {
+            // plain text error (like "User already exists")
+            message = await res.text();
+        }
+
+        alert(message);
+    }
+}
+</script>

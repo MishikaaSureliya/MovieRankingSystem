@@ -1,0 +1,60 @@
+﻿<link rel="stylesheet" href="/css/site.css" />
+<script>
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        window.location.href = "/Home/Login";
+    }
+</script>
+
+<div class="container">
+    <a href="/Home/Index">⬅ Back</a>
+
+    <h2>Compare Ranking</h2>
+
+    <input id="query" placeholder="Enter genre" />
+    <button onclick="compare()">Compare</button>
+
+    <div class="flex">
+        <div>
+            <h3>Pointwise</h3>
+            <div id="pointwise"></div>
+        </div>
+
+        <div>
+            <h3>Pairwise</h3>
+            <div id="pairwise"></div>
+        </div>
+
+        <div>
+            <h3>Listwise</h3>
+            <div id="listwise"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    async function compare() {
+        const query = document.getElementById("query").value;
+
+        const res = await fetch(`/api/movie/compare?query=${query}`, {
+            headers: {
+                "Authorization": "Bearer " + localStorage.getItem("token")
+            }
+        });
+
+        const data = await res.json();
+
+        render("pointwise", data.pointwise);
+        render("pairwise", data.pairwise);
+        render("listwise", data.listwise);
+    }
+
+    function render(id, list) {
+        let html = "";
+        list.forEach(m => {
+            html += `<div class="card">${m.movie} (${m.score.toFixed(2)})</div>`;
+        });
+        document.getElementById(id).innerHTML = html;
+    }
+</script>

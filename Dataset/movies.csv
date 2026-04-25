@@ -1,0 +1,81 @@
+Query,Movie,Genre,Rating,Popularity,GenreMatch,Label,GroupId
+action,Avengers,Action,4.5,2000,1,3,action
+action,Batman,Action,4.2,1800,1,3,action
+action,John Wick,Action,4.0,1700,1,2,action
+action,Gladiator,Action,4.3,1600,1,3,action
+action,Titanic,Romance,4.8,2500,0,1,action
+action,Notebook,Romance,4.6,2100,0,1,action
+action,Deadpool,Action,4.1,1900,1,2,action
+action,Fast Furious,Action,3.8,2200,1,2,action
+action,Matrix,Action,4.7,2300,1,3,action
+action,Spiderman,Action,4.4,2100,1,3,action
+romance,Titanic,Romance,4.8,2500,1,3,romance
+romance,Notebook,Romance,4.6,2100,1,3,romance
+romance,La La Land,Romance,4.3,1800,1,2,romance
+romance,Pride Prejudice,Romance,4.5,1700,1,3,romance
+romance,Avengers,Action,4.5,2000,0,1,romance
+romance,Batman,Action,4.2,1800,0,1,romance
+romance,Before Sunrise,Romance,4.4,1600,1,2,romance
+romance,Dear John,Romance,3.9,1500,1,2,romance
+romance,The Vow,Romance,4.0,1400,1,2,romance
+romance,John Wick,Action,4.0,1700,0,1,romance
+comedy,Hangover,Comedy,4.3,2000,1,3,comedy
+comedy,Superbad,Comedy,4.1,1800,1,2,comedy
+comedy,Step Brothers,Comedy,4.0,1700,1,2,comedy
+comedy,Mask,Comedy,4.5,1900,1,3,comedy
+comedy,Avengers,Action,4.5,2000,0,1,comedy
+comedy,Titanic,Romance,4.8,2500,0,1,comedy
+comedy,Home Alone,Comedy,4.6,2100,1,3,comedy
+comedy,Johnny English,Comedy,3.8,1600,1,2,comedy
+comedy,Dumb Dumber,Comedy,4.2,1800,1,3,comedy
+comedy,Rush Hour,Comedy,4.1,1700,1,2,comedy
+thriller,Inception,Thriller,4.8,2400,1,3,thriller
+thriller,Shutter Island,Thriller,4.7,2200,1,3,thriller
+thriller,Se7en,Thriller,4.6,2100,1,3,thriller
+thriller,Parasite,Thriller,4.5,2300,1,3,thriller
+thriller,Titanic,Romance,4.8,2500,0,1,thriller
+thriller,Avengers,Action,4.5,2000,0,1,thriller
+thriller,Gone Girl,Thriller,4.4,1900,1,2,thriller
+thriller,Joker,Thriller,4.3,2000,1,2,thriller
+thriller,Us,Thriller,4.0,1800,1,2,thriller
+thriller,Get Out,Thriller,4.2,1900,1,2,thriller
+sci-fi,Interstellar,Sci-Fi,4.8,2500,1,3,sci-fi
+sci-fi,Matrix,Sci-Fi,4.7,2300,1,3,sci-fi
+sci-fi,Inception,Sci-Fi,4.8,2400,1,3,sci-fi
+sci-fi,Avatar,Sci-Fi,4.6,2600,1,3,sci-fi
+sci-fi,Avengers,Action,4.5,2000,0,1,sci-fi
+sci-fi,Titanic,Romance,4.8,2500,0,1,sci-fi
+sci-fi,Gravity,Sci-Fi,4.2,1800,1,2,sci-fi
+sci-fi,Arrival,Sci-Fi,4.3,1700,1,2,sci-fi
+sci-fi,Blade Runner,Sci-Fi,4.1,1600,1,2,sci-fi
+sci-fi,Tenet,Sci-Fi,4.0,1900,1,2,sci-fi
+drama,Forrest Gump,Drama,4.9,2600,1,3,drama
+drama,Shawshank,Drama,4.9,2700,1,3,drama
+drama,Godfather,Drama,4.8,2800,1,3,drama
+drama,Whiplash,Drama,4.7,2000,1,3,drama
+drama,Avengers,Action,4.5,2000,0,1,drama
+drama,Titanic,Romance,4.8,2500,0,1,drama
+drama,Fight Club,Drama,4.6,2200,1,3,drama
+drama,Joker,Drama,4.5,2100,1,2,drama
+drama,The Pianist,Drama,4.7,1900,1,3,drama
+drama,Gladiator,Action,4.3,1600,0,1,drama
+horror,Conjuring,Horror,4.3,2000,1,3,horror
+horror,Insidious,Horror,4.1,1800,1,2,horror
+horror,Annabelle,Horror,3.8,1700,1,2,horror
+horror,It,Horror,4.2,2100,1,2,horror
+horror,Avengers,Action,4.5,2000,0,1,horror
+horror,Titanic,Romance,4.8,2500,0,1,horror
+horror,The Nun,Horror,3.7,1600,1,1,horror
+horror,Get Out,Horror,4.2,1900,1,2,horror
+horror,Us,Horror,4.0,1800,1,2,horror
+horror,A Quiet Place,Horror,4.3,2000,1,3,horror
+animation,Frozen,Animation,4.5,2300,1,3,animation
+animation,Toy Story,Animation,4.7,2500,1,3,animation
+animation,Lion King,Animation,4.8,2600,1,3,animation
+animation,Moana,Animation,4.4,2200,1,2,animation
+animation,Avengers,Action,4.5,2000,0,1,animation
+animation,Titanic,Romance,4.8,2500,0,1,animation
+animation,Coco,Animation,4.6,2400,1,3,animation
+animation,Up,Animation,4.7,2300,1,3,animation
+animation,Minions,Animation,4.0,2100,1,2,animation
+animation,Kung Fu Panda,Animation,4.3,2200,1,2,animation

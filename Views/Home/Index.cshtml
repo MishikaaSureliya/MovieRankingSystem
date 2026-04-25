@@ -1,0 +1,31 @@
+﻿<link rel="stylesheet" href="/css/site.css" />
+<script>
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+        window.location.href = "/Home/Login";
+    }
+</script>
+
+<div class="nav">
+    <div>🎬 Movie Ranking</div>
+    <div>
+        <a href="/Home/Search">Search</a>
+        <a href="/Home/Compare">Compare</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Welcome to Movie Ranking System</h1>
+
+    <a href="/Home/Search"><button>🔍 Search</button></a>
+    <a href="/Home/Compare"><button>⚖️ Compare</button></a>
+</div>
+
+<script>
+    function logout() {
+        localStorage.removeItem("token");
+        window.location.href = "/Home/Login";
+    }
+</script>
