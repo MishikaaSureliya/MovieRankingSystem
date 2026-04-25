@@ -85,27 +85,27 @@ It demonstrates **Pointwise, Pairwise, and Listwise ranking techniques** and inc
 
 ### 🏠 Home Page
 
-![Home](css/screenshots/home.png)
+![Home](wwwroot/screenshots/home.png)
 
 ### 🔐 Login Page
 
-![Login](css/screenshots/login.png)
+![Login](wwwroot/screenshots/login.png)
 
 ### 📝 Register Page
 
-![Register](css/screenshots/register.png)
+![Register](wwwroot/screenshots/register.png)
 
 ### 🔍 Search Page
 
-![Search](css/screenshots/search.png)
+![Search](wwwroot/screenshots/search.png)
 
 ### ⚖️ Compare Page
 
-![Compare](css/screenshots/compare.png)
+![Compare](wwwroot/screenshots/compare.png)
 
 ### Database
 
-![Database](css/screenshots/database.png)
+![Database](wwwroot/screenshots/database.png)
 
 ---
 
